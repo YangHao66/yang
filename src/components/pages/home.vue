@@ -22,6 +22,14 @@ export default {
   components: {
     Top,
     SideBar
+  },
+  beforeCreate() {
+    var token = window.localStorage.getItem("token");
+    if (!token) {
+      this.$router.push("/login");
+      this.$message.error("您还未登录，请先登录");
+      return;
+    }
   }
 };
 </script>
