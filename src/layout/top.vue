@@ -1,9 +1,4 @@
 <template>
-    <!-- 
-                                                                    el-row: 一行
-                                                                     el-col：一列
-                                                                        span: 所占的分栏数
-                                                                 -->
     <el-row>
         <el-col :span="6">
             <div>

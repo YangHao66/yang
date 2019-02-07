@@ -1,11 +1,7 @@
 <template>
   <el-card>
     <!-- 面包屑导航 -->
-    <el-breadcrumb separator-class="el-icon-more">
-      <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
-      <el-breadcrumb-item>用户管理</el-breadcrumb-item>
-      <el-breadcrumb-item>用户列表</el-breadcrumb-item>
-    </el-breadcrumb>
+    <MyBread firstnav="用户管理" lastnav="用户列表" />
     <!-- 搜索框 -->
     <el-row class="search">
       <el-col :span="8">
